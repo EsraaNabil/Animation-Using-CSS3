@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+}
+.container{
+    background-color:#19334d  ;
+    width: 100%;
+    height: 100%;
+    animation-name: color;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.groundleft2{
+    background-color: yellow;
+    width: 700px;
+    height: 150px; 
+    border-top-left-radius: 900px; 
+    border-top-right-radius: 800px; 
+    border-bottom: 0;
+    position: absolute;
+    bottom:0px;
+    left: 45px;
+    z-index: 2;
+}
+.groundleft1{
+    background-color: green;
+    width: 850px;
+    height: 200px; 
+    border-top-left-radius: 300px;  
+    border-top-right-radius: 300px; 
+    border-bottom: 0;
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    z-index: 1;
+}
+.groundright{
+    background-color: green;
+    width: 600px;
+    height: 200px; 
+    border-top-left-radius: 290px;  
+    border-top-right-radius: 290px; 
+    border-bottom: 0;
+    position: absolute;
+    bottom:0px;
+    right: 0;
+    z-index: 1;
+}
+.sun{
+    border-radius: 50%;
+    background-color: orange;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    box-shadow: 1px 2px 71px 29px yellow;
+    animation-name: jump;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: 0px;
+    left:  50%;
+
+}
+
+@keyframes jump{
+    0%{}
+    25%{background-color: orange;
+
+        transform:translate(0,-550px);
+    }
+    50%{background-color: orange;
+
+        transform:translate(0,0);
+    }
+    75%{
+        transform:translate(0,-250px);
+        box-shadow:none;
+        background-color: white;
+        
+    }
+     90%{
+        transform:translate(0,-550px);
+        box-shadow: 1px 2px 50px 19px white;
+        background-color: white;
+        
+    }
+       100%{background-color: white;
+        box-shadow: 1px 2px 50px 19px white;
+        transform:translate(0,0);
+    }
+    
+    
+}
+@keyframes color{
+    0%{}
+    25%{
+        
+        background-color:#8db3ef ;
+    }
+    50%{
+
+        background-color:#8db3ef ;
+    }
+    75%{
+        background-color:#19334d ;
+    }
+     90%{
+        background-color:#19334d ;
+    }
+     100%{
+        background-color:#19334d ;
+    }
+}
